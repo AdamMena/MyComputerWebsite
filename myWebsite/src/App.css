@@ -1,0 +1,246 @@
+/* App.css */
+
+/* Ensure root element is centered and has a max width */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Main container styles */
+.frontpage-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Image gallery styles */
+.image-gallery {
+  display: flex;
+  flex-direction: column; /* Change to column layout for better alignment */
+  align-items: center; /* Align items in the center */
+  margin-top: 20px;
+}
+
+/* Wrapper for individual images */
+.image-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+/* Styling for individual images */
+.image-wrapper .image-item {
+  text-align: center;
+  margin: 10px; /* Add margin around each image */
+}
+
+.image-wrapper img {
+  width: 300px; /* Set a fixed width for consistency */
+  height: auto;
+  margin-bottom: 10px; /* Add bottom margin to separate images */
+}
+
+/* Responsive styling for images on smaller screens */
+@media (max-width: 768px) {
+  .image-wrapper img {
+    width: 100%; /* Make images full width on smaller screens */
+  }
+}
+
+/* Navigation styles */
+.navigation {
+  display: flex;
+  list-style: none;
+}
+
+.navigation li {
+  margin: 0 10px;
+}
+
+/* Styling for hero section */
+.hero-section {
+  margin-bottom: 20px;
+}
+
+/* Styling for bottom border */
+.bottom-border {
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+/* ServicesPage.css */
+.services-page {
+  background-image: url('../src/photos/background2.jpeg'); /* Adjust the path as needed */
+  background-size: cover;
+  background-position: center;
+  display: flex; /* Use flexbox to align content */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+ 
+}
+
+.services-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.service {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-icon {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+.service-details {
+  flex: 1;
+}
+
+.service-details h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.service-details ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.service-details li {
+  margin-bottom: 5px;
+}
+
+.home-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}
+
+
+/* ContactPage.css */
+
+.contact-page {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightskyblue;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type='text'],
+input[type='date'],
+textarea {
+  width: 100%;
+  padding: px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button, .home-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover, .home-button:hover {
+  background-color: #0056b3;
+}
+
+.home-button {
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+}
+
+.section h2 {
+  margin-bottom: 1rem;
+}
+
+.section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* EstimatesPage.css */
+.estimates-page {
+  padding: 2rem;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.service-category {
+  margin-bottom: 2rem;
+}
+
+.service-category h2 {
+  margin-bottom: 1rem;
+}
+
+.service-category ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
