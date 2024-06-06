@@ -1,4 +1,4 @@
-# Make sure to have nodeJS and node package manager(npm) installed.
+# Make sure to have NodeJS and node package manager(npm) installed.
 
 Launch the program using the command "npm run dev".
 
